@@ -26,7 +26,9 @@ Route::post('admin/login','Admin\LoginController@dologin');
 //加密路由
 Route::get('admin/crypt','Admin\LoginController@crypt');
 
-Route::group(['prefix'=>'admin','namespace'=>'Admin','middleware'=>'login.admin'],function(){
+
+//路由组
+Route::group(['prefix'=>'admin','namespace'=>'Admin'],function(){
 
 //后台首页页面
 Route::get('index','IndexController@index');
@@ -40,7 +42,26 @@ Route::get('quit','IndexController@quit');
 Route::get('pass','IndexController@pass');
 
 //修改密码业务逻辑
-// Route::post('pass','IndexController@dopass');
+Route::post('pass','IndexController@dopass');
 
+
+//    用户模块
+Route::resource('user','UserController');
+
+
+//友情链接
+/*Route::resource('link','FriendController');
+
+//网站配置
+Route::resource('config','ConfigController');
+*/
 });
+
+
+
+//前台首页页面
+Route::get('home/index','Home\IndexController@index');
+
+
+
 
