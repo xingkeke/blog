@@ -27,15 +27,21 @@
             <li>
             	<h3><i class="fa fa-fw fa-clipboard"></i>用户管理</h3>
                 <ul class="sub_menu">
+
                     <li><a href="{{url('admin/user/create')}}" target="main"><i class="fa fa-fw fa-plus-square"></i>添加用户</a></li>
                     <li><a href="{{url('admin/user')}}" target="main"><i class="fa fa-fw fa-list-ul"></i>用户列表</a></li>
+
                 </ul>
             </li>
             <li>
             	<h3><i class="fa fa-fw fa-cog"></i>系统设置</h3>
                 <ul class="sub_menu">
-                    <li><a href="{{url('admin/user/create')}}" target="main"><i class="fa fa-fw fa-plus-square"></i>添加用户</a></li>
-                    <li><a href="{{url('admin/user')}}" target="main"><i class="fa fa-fw fa-list-ul"></i>用户列表</a></li>
+
+                    <li><a href="{{url('admin/link')}}" target="main"><i class="fa fa-fw fa-cubes"></i>友情链接列表</a></li>
+                    <li><a href="{{url('admin/link/create')}}" target="main"><i class="fa fa-fw fa-database"></i>添加友情链接</a></li>
+                    <li><a href="{{url('admin/config/create')}}" target="main"><i class="fa fa-fw fa-cubes"></i>添加网站配置</a></li>
+                    <li><a href="{{url('admin/config')}}" target="main"><i class="fa fa-fw fa-cubes"></i>网站配置</a></li>
+
                 </ul>
             </li>
             <li>

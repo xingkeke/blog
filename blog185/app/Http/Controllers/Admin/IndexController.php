@@ -46,9 +46,8 @@ class IndexController extends Controller
     //修改密码业务逻辑
     public function dopass()
     {
-        // echo '121111';
 
-        $input = Input::except('_token');
+          $input = Input::except('_token');
 
     //验证规则
         $rule = [
@@ -102,6 +101,5 @@ class IndexController extends Controller
         }
 
 
-
-    }
+}
 }

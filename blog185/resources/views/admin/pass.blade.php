@@ -1,5 +1,8 @@
 @extends('layouts.admin')
+<<<<<<< HEAD
 @section('content')
+=======
+>>>>>>> 5475555478fa6ec617441055ccf6c9f922c9f364
 <body>
     <!--面包屑导航 开始-->
 <div class="crumb_warp">
@@ -12,6 +15,7 @@
 <div class="result_wrap">
     <div class="result_title">
         <h3>修改密码</h3>
+<<<<<<< HEAD
        @if (count($errors) > 0)
           <div class="mark">
               <ul>
@@ -25,6 +29,8 @@
               </ul>
           </div>
       @endif 
+=======
+>>>>>>> 5475555478fa6ec617441055ccf6c9f922c9f364
     </div>
 </div>
 <!--结果集标题与导航组件 结束-->
@@ -64,4 +70,7 @@
     </form>
 </div>
 </body>
+<<<<<<< HEAD
 @endsection
+=======
+>>>>>>> 5475555478fa6ec617441055ccf6c9f922c9f364

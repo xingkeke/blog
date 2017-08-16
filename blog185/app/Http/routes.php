@@ -42,6 +42,7 @@ Route::get('quit','IndexController@quit');
 Route::get('pass','IndexController@pass');
 
 //修改密码业务逻辑
+
 Route::post('pass','IndexController@dopass');
 
 
@@ -50,11 +51,11 @@ Route::resource('user','UserController');
 
 
 //友情链接
-/*Route::resource('link','FriendController');
+Route::resource('link','FriendController');
 
 //网站配置
 Route::resource('config','ConfigController');
-*/
+
 });
 
 

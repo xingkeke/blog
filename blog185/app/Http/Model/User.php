@@ -23,7 +23,9 @@ class User extends Model implements AuthenticatableContract,
      */
     protected $table = 'user';
 
-    protected $primaryKey = 'user_id';
+
+    protected $primarykey = 'user_id';
+
 
     /**
      * The attributes that are mass assignable.
@@ -31,16 +33,12 @@ class User extends Model implements AuthenticatableContract,
      * @var array
      */
     protected $guarded = [];
+
      // protected $fillable = ['user_name','user_pass'];
 
      public $timestamps = false;
 
-     // protected $connection = 'detail_id';
+    }
 
-    /**
-     * The attributes excluded from the model's JSON form.
-     *
-     * @var array
-     */
-    // protected $hidden = ['password', 'remember_token'];
-}
+
+    
